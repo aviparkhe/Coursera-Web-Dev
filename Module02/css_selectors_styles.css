@@ -1,0 +1,59 @@
+#main-heading {
+    font-size: 40px;
+    font-weight: normal;
+    background-color: grey;
+    color: black;
+    opacity: 0.7;
+    }
+
+
+#heading {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: red;
+    opacity: 0.3;
+    }
+
+.subheading {
+    color: blue;
+    background-color: cyan;
+    font-size: 20px;
+    }
+
+.css-subject span {
+    font-weight: bold;
+    }
+
+h2.statement {
+    color: red;
+    font-weight: bold;
+    background-color: beige;
+    }
+
+header li {
+    list-style: none;
+    }
+
+a:link, a:visited {
+    text-decoration: none;
+    background-color: green;
+    border: 1px solid blue;
+    color: black;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px
+    }
+
+a:hover, a:active {
+    background-color: red;
+    color: blue;
+    }
+
+header li:nth-child(3) {
+    font-size: 24px;
+    }
+
+div:nth-child(odd) {
+    background-color: lightgrey;
+}
