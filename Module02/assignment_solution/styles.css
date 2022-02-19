@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+}
+
+#header {
+    text-align: center;
+    padding: 40px;
+    font-size: 175%;
+}
+
+.subheading {
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    border: 3px solid black;
+    position: absolute;
+    right: 8px;
+}
+
+#chicken_header {
+    background-color: #c27e8e;
+}
+
+#beef_header {
+    background-color: #ad3121;
+}
+
+#sushi_header {
+    background-color: #ebdd9b;
+}
+
+.description {
+    background-color: #757575;
+    margin: 10px 0 10px 0;
+    padding: 40px 5px 5px 5px;
+    border: 3px solid black;
+}
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+    #chicken_container {
+        position: absolute;
+        width: 30%;
+        left: 23px;
+    }
+
+    #beef_container {
+        position: absolute;
+        width: 30%;
+        left: 35%;
+    }
+
+    #sushi_container {
+        position: absolute;
+        width: 30%;
+        right: 23px;
+    }
+
+    .subheading {
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+
+}
+
+/* Tablet view (between 768px and 991px inclusive) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #header {
+        font-size: 35px;
+    }
+
+    #chicken_container {
+            position: absolute;
+            width: 48%;
+            height: 500px;
+        }
+
+        #beef_container {
+            position: absolute;
+            width: 48%;
+            right: 10px;
+        }
+
+        #sushi_container {
+            position: absolute;
+            width: 98%;
+            right: 10px;
+            top: 315px;
+        }
+
+        .subheading {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            font-size: 25px;
+        }
+
+        .description {
+            font-size: 20px;
+            padding-top: 50px;
+        }
+}
+
+/* Mobile view (less than or equal to 767px) */
+@media (max-width: 767px) {
+
+}
