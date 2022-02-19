@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #ebebeb;
     font-size: 17px;
@@ -71,7 +67,7 @@ body {
 }
 
 /* Tablet view (between 768px and 991px inclusive) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 912px) and (max-width: 991px) {
     #header {
         font-size: 35px;
     }
@@ -90,9 +86,8 @@ body {
 
         #sushi_container {
             position: absolute;
-            width: 98%;
-            right: 10px;
-            top: 315px;
+            width: 98.25%;
+            top: 325px;
         }
 
         .subheading {
@@ -108,7 +103,54 @@ body {
         }
 }
 
+@media (min-width: 768px) and (max-width: 911px) {
+    #header {
+            font-size: 35px;
+        }
+
+        #chicken_container {
+                position: absolute;
+                width: 48%;
+                height: 500px;
+            }
+
+            #beef_container {
+                position: absolute;
+                width: 48%;
+                right: 10px;
+            }
+
+            #sushi_container {
+                position: absolute;
+                width: 98.25%;
+                top: 343px;
+            }
+
+            .subheading {
+                position: absolute;
+                right: 0;
+                top: 10px;
+                font-size: 25px;
+            }
+
+            .description {
+                font-size: 20px;
+                padding-top: 50px;
+            }
+}
+
 /* Mobile view (less than or equal to 767px) */
 @media (max-width: 767px) {
+    .description {
+        font-size: 30px;
+        padding-top: 70px;
+    }
 
+    .subheading {
+        font-size: 37.5px;
+    }
+
+    #header {
+        font-size: 52.5px;
+    }
 }
